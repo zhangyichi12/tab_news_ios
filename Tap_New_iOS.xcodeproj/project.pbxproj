@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C91EA4A2003421A00171CB7 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91EA492003421A00171CB7 /* NewsDetailViewController.swift */; };
+		2C9E5F4E2004A7AF00AAB268 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E5F4D2004A7AE00AAB268 /* NewsCollectionViewCell.xib */; };
+		2C9E5F502004A7C200AAB268 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E5F4F2004A7C200AAB268 /* NewsCollectionViewCell.swift */; };
 		2CB65CD22002E4E400BA5338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB65CD12002E4E400BA5338 /* AppDelegate.swift */; };
-		2CB65CD42002E4E400BA5338 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB65CD32002E4E400BA5338 /* ViewController.swift */; };
 		2CB65CD72002E4E400BA5338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB65CD52002E4E400BA5338 /* Main.storyboard */; };
 		2CB65CD92002E4E400BA5338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB65CD82002E4E400BA5338 /* Assets.xcassets */; };
 		2CB65CDC2002E4E400BA5338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB65CDA2002E4E400BA5338 /* LaunchScreen.storyboard */; };
 		2CB65CE72002E4E500BA5338 /* Tap_New_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB65CE62002E4E500BA5338 /* Tap_New_iOSTests.swift */; };
 		2CB65CF22002E4E500BA5338 /* Tap_New_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB65CF12002E4E500BA5338 /* Tap_New_iOSUITests.swift */; };
+		2CB65D042002E7B000BA5338 /* NewsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB65D032002E7B000BA5338 /* NewsCollectionViewController.swift */; };
+		2CB65D072002ED5800BA5338 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB65D062002ED5800BA5338 /* News.swift */; };
+		2CB65D0A2002EE9700BA5338 /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB65D092002EE9700BA5338 /* NewsList.swift */; };
+		2CB65D1720032EC200BA5338 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB65D1620032EC200BA5338 /* NewsTableViewController.swift */; };
+		2CB65D4220033A3A00BA5338 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB65D4020033A3A00BA5338 /* NewsTableViewCell.swift */; };
+		2CB65D4320033A3A00BA5338 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB65D4120033A3A00BA5338 /* NewsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C91EA492003421A00171CB7 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		2C9E5F4D2004A7AE00AAB268 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
+		2C9E5F4F2004A7C200AAB268 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		2CB65CCE2002E4E400BA5338 /* Tap_New_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tap_New_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB65CD12002E4E400BA5338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CB65CD32002E4E400BA5338 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CB65CD62002E4E400BA5338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CB65CD82002E4E400BA5338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CB65CDB2002E4E400BA5338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,12 @@
 		2CB65CED2002E4E500BA5338 /* Tap_New_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tap_New_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB65CF12002E4E500BA5338 /* Tap_New_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_New_iOSUITests.swift; sourceTree = "<group>"; };
 		2CB65CF32002E4E500BA5338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CB65D032002E7B000BA5338 /* NewsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewController.swift; sourceTree = "<group>"; };
+		2CB65D062002ED5800BA5338 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		2CB65D092002EE9700BA5338 /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
+		2CB65D1620032EC200BA5338 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		2CB65D4020033A3A00BA5338 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		2CB65D4120033A3A00BA5338 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C9E5F4B2004A7AE00AAB268 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				2C9E5F4C2004A7AE00AAB268 /* Custom CollectionView Cell */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		2C9E5F4C2004A7AE00AAB268 /* Custom CollectionView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2C9E5F4D2004A7AE00AAB268 /* NewsCollectionViewCell.xib */,
+				2C9E5F4F2004A7C200AAB268 /* NewsCollectionViewCell.swift */,
+			);
+			path = "Custom CollectionView Cell";
+			sourceTree = "<group>";
+		};
 		2CB65CC52002E4E400BA5338 = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +130,9 @@
 		2CB65CD02002E4E400BA5338 /* Tap_New_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2CB65CD12002E4E400BA5338 /* AppDelegate.swift */,
-				2CB65CD32002E4E400BA5338 /* ViewController.swift */,
-				2CB65CD52002E4E400BA5338 /* Main.storyboard */,
-				2CB65CD82002E4E400BA5338 /* Assets.xcassets */,
-				2CB65CDA2002E4E400BA5338 /* LaunchScreen.storyboard */,
+				2CB65D1A2003354D00BA5338 /* Controller */,
+				2CB65D082002EE5B00BA5338 /* View */,
+				2CB65D052002ED4D00BA5338 /* Model */,
 				2CB65CDD2002E4E400BA5338 /* Info.plist */,
 			);
 			path = Tap_New_iOS;
@@ -123,6 +154,55 @@
 				2CB65CF32002E4E500BA5338 /* Info.plist */,
 			);
 			path = Tap_New_iOSUITests;
+			sourceTree = "<group>";
+		};
+		2CB65D052002ED4D00BA5338 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CB65D062002ED5800BA5338 /* News.swift */,
+				2CB65D092002EE9700BA5338 /* NewsList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CB65D082002EE5B00BA5338 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C9E5F4B2004A7AE00AAB268 /* CollectionView */,
+				2CB65D182003350900BA5338 /* TableView */,
+				2CB65CD12002E4E400BA5338 /* AppDelegate.swift */,
+				2CB65CD52002E4E400BA5338 /* Main.storyboard */,
+				2CB65CD82002E4E400BA5338 /* Assets.xcassets */,
+				2CB65CDA2002E4E400BA5338 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CB65D1020032BDC00BA5338 /* Custom TableView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2CB65D4020033A3A00BA5338 /* NewsTableViewCell.swift */,
+				2CB65D4120033A3A00BA5338 /* NewsTableViewCell.xib */,
+			);
+			path = "Custom TableView Cell";
+			sourceTree = "<group>";
+		};
+		2CB65D182003350900BA5338 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2CB65D1020032BDC00BA5338 /* Custom TableView Cell */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		2CB65D1A2003354D00BA5338 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CB65D032002E7B000BA5338 /* NewsCollectionViewController.swift */,
+				2CB65D1620032EC200BA5338 /* NewsTableViewController.swift */,
+				2C91EA492003421A00171CB7 /* NewsDetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +273,7 @@
 				TargetAttributes = {
 					2CB65CCD2002E4E400BA5338 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					2CB65CE12002E4E500BA5338 = {
@@ -235,6 +316,8 @@
 				2CB65CDC2002E4E400BA5338 /* LaunchScreen.storyboard in Resources */,
 				2CB65CD92002E4E400BA5338 /* Assets.xcassets in Resources */,
 				2CB65CD72002E4E400BA5338 /* Main.storyboard in Resources */,
+				2C9E5F4E2004A7AF00AAB268 /* NewsCollectionViewCell.xib in Resources */,
+				2CB65D4320033A3A00BA5338 /* NewsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +342,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CB65CD42002E4E400BA5338 /* ViewController.swift in Sources */,
+				2C91EA4A2003421A00171CB7 /* NewsDetailViewController.swift in Sources */,
+				2CB65D042002E7B000BA5338 /* NewsCollectionViewController.swift in Sources */,
+				2CB65D4220033A3A00BA5338 /* NewsTableViewCell.swift in Sources */,
+				2C9E5F502004A7C200AAB268 /* NewsCollectionViewCell.swift in Sources */,
+				2CB65D0A2002EE9700BA5338 /* NewsList.swift in Sources */,
+				2CB65D1720032EC200BA5338 /* NewsTableViewController.swift in Sources */,
+				2CB65D072002ED5800BA5338 /* News.swift in Sources */,
 				2CB65CD22002E4E400BA5338 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,11 +515,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tap_New_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.yichizhang.Tap-New-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tap_New_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
