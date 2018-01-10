@@ -10,6 +10,7 @@
 		2C91EA4A2003421A00171CB7 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91EA492003421A00171CB7 /* NewsDetailViewController.swift */; };
 		2C9E5F4E2004A7AF00AAB268 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E5F4D2004A7AE00AAB268 /* NewsCollectionViewCell.xib */; };
 		2C9E5F502004A7C200AAB268 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E5F4F2004A7C200AAB268 /* NewsCollectionViewCell.swift */; };
+		2C9E5F532005CB6200AAB268 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E5F522005CB6200AAB268 /* MapViewController.swift */; };
 		2CB65CD22002E4E400BA5338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB65CD12002E4E400BA5338 /* AppDelegate.swift */; };
 		2CB65CD72002E4E400BA5338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB65CD52002E4E400BA5338 /* Main.storyboard */; };
 		2CB65CD92002E4E400BA5338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB65CD82002E4E400BA5338 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		2C91EA492003421A00171CB7 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		2C9E5F4D2004A7AE00AAB268 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
 		2C9E5F4F2004A7C200AAB268 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		2C9E5F522005CB6200AAB268 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2CB65CCE2002E4E400BA5338 /* Tap_New_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tap_New_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB65CD12002E4E400BA5338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CB65CD62002E4E400BA5338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,21 @@
 			path = "Custom CollectionView Cell";
 			sourceTree = "<group>";
 		};
+		2C9E5F512005CB4900AAB268 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				2C9E5F522005CB6200AAB268 /* MapViewController.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		2C9E5F542005D36600AAB268 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2CB65CC52002E4E400BA5338 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +131,7 @@
 				2CB65CE52002E4E500BA5338 /* Tap_New_iOSTests */,
 				2CB65CF02002E4E500BA5338 /* Tap_New_iOSUITests */,
 				2CB65CCF2002E4E400BA5338 /* Products */,
+				2C9E5F542005D36600AAB268 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +186,7 @@
 		2CB65D082002EE5B00BA5338 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2C9E5F512005CB4900AAB268 /* MapView */,
 				2C9E5F4B2004A7AE00AAB268 /* CollectionView */,
 				2CB65D182003350900BA5338 /* TableView */,
 				2CB65CD12002E4E400BA5338 /* AppDelegate.swift */,
@@ -275,6 +294,11 @@
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					2CB65CE12002E4E500BA5338 = {
 						CreatedOnToolsVersion = 9.2;
@@ -346,6 +370,7 @@
 				2CB65D042002E7B000BA5338 /* NewsCollectionViewController.swift in Sources */,
 				2CB65D4220033A3A00BA5338 /* NewsTableViewCell.swift in Sources */,
 				2C9E5F502004A7C200AAB268 /* NewsCollectionViewCell.swift in Sources */,
+				2C9E5F532005CB6200AAB268 /* MapViewController.swift in Sources */,
 				2CB65D0A2002EE9700BA5338 /* NewsList.swift in Sources */,
 				2CB65D1720032EC200BA5338 /* NewsTableViewController.swift in Sources */,
 				2CB65D072002ED5800BA5338 /* News.swift in Sources */,
