@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C15A9CF20071AA6002808EC /* NewsRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9CE20071AA6002808EC /* NewsRecognitionViewController.swift */; };
 		2C91EA4A2003421A00171CB7 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91EA492003421A00171CB7 /* NewsDetailViewController.swift */; };
 		2C9E5F4E2004A7AF00AAB268 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E5F4D2004A7AE00AAB268 /* NewsCollectionViewCell.xib */; };
 		2C9E5F502004A7C200AAB268 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E5F4F2004A7C200AAB268 /* NewsCollectionViewCell.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C15A9CE20071AA6002808EC /* NewsRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRecognitionViewController.swift; sourceTree = "<group>"; };
 		2C91EA492003421A00171CB7 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		2C9E5F4D2004A7AE00AAB268 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
 		2C9E5F4F2004A7C200AAB268 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -107,14 +109,6 @@
 				2C9E5F4F2004A7C200AAB268 /* NewsCollectionViewCell.swift */,
 			);
 			path = "Custom CollectionView Cell";
-			sourceTree = "<group>";
-		};
-		2C9E5F512005CB4900AAB268 /* MapView */ = {
-			isa = PBXGroup;
-			children = (
-				2C9E5F522005CB6200AAB268 /* MapViewController.swift */,
-			);
-			path = MapView;
 			sourceTree = "<group>";
 		};
 		2C9E5F542005D36600AAB268 /* Frameworks */ = {
@@ -186,7 +180,6 @@
 		2CB65D082002EE5B00BA5338 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2C9E5F512005CB4900AAB268 /* MapView */,
 				2C9E5F4B2004A7AE00AAB268 /* CollectionView */,
 				2CB65D182003350900BA5338 /* TableView */,
 				2CB65CD12002E4E400BA5338 /* AppDelegate.swift */,
@@ -220,6 +213,8 @@
 				2CB65D032002E7B000BA5338 /* NewsCollectionViewController.swift */,
 				2CB65D1620032EC200BA5338 /* NewsTableViewController.swift */,
 				2C91EA492003421A00171CB7 /* NewsDetailViewController.swift */,
+				2C15A9CE20071AA6002808EC /* NewsRecognitionViewController.swift */,
+				2C9E5F522005CB6200AAB268 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -367,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C91EA4A2003421A00171CB7 /* NewsDetailViewController.swift in Sources */,
+				2C15A9CF20071AA6002808EC /* NewsRecognitionViewController.swift in Sources */,
 				2CB65D042002E7B000BA5338 /* NewsCollectionViewController.swift in Sources */,
 				2CB65D4220033A3A00BA5338 /* NewsTableViewCell.swift in Sources */,
 				2C9E5F502004A7C200AAB268 /* NewsCollectionViewCell.swift in Sources */,
@@ -542,6 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EC59E44FX2;
 				INFOPLIST_FILE = Tap_New_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.yichizhang.Tap-New-iOS";
@@ -558,6 +555,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EC59E44FX2;
 				INFOPLIST_FILE = Tap_New_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.yichizhang.Tap-New-iOS";

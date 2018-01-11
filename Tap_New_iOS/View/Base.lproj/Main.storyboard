@@ -96,7 +96,11 @@
             <objects>
                 <tabBarController id="eDM-Yu-gPP" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="NTz-Pb-Z2l">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="sCd-7L-ste"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="sCd-7L-ste">
+                            <connections>
+                                <segue destination="HsP-gy-tLU" kind="show" id="mum-fL-nPW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zNX-GK-N89">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -125,7 +129,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Vu-fS-ELL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="561" y="-946"/>
+            <point key="canvasLocation" x="683" y="-967"/>
         </scene>
         <!--News Detail View Controller-->
         <scene sceneID="2d9-XJ-EQi">
@@ -214,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIS-bN-mRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1722" y="-717"/>
+            <point key="canvasLocation" x="1522" y="-757"/>
         </scene>
         <!--Collection-->
         <scene sceneID="Be9-Yc-ewB">
@@ -225,17 +229,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="w4O-5e-lTh">
-                            <size key="itemSize" width="192" height="231"/>
+                            <size key="itemSize" width="179" height="231"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCollectionCell" id="iaT-ZQ-eMD">
-                                <rect key="frame" x="0.0" y="0.0" width="192" height="231"/>
+                                <rect key="frame" x="0.0" y="0.0" width="179" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="192" height="231"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="179" height="231"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </view>
                             </collectionViewCell>
@@ -250,7 +254,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oOv-4D-9LW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="851" y="-505"/>
+            <point key="canvasLocation" x="682.60869565217399" y="-258.42391304347831"/>
         </scene>
         <!--Map-->
         <scene sceneID="zGb-xo-WVq">
@@ -281,7 +285,68 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vy7-3z-DZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="561" y="-55"/>
+            <point key="canvasLocation" x="683" y="478"/>
+        </scene>
+        <!--News Recognition View Controller-->
+        <scene sceneID="LeP-Xa-iFh">
+            <objects>
+                <viewController id="HsP-gy-tLU" customClass="NewsRecognitionViewController" customModule="Tap_New_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MFM-Z5-lUU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Output Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pc-hM-PGK">
+                                <rect key="frame" x="8" y="72" width="398" height="28"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucL-Q8-PBq">
+                                <rect key="frame" x="8" y="108" width="398" height="576"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vve-Z3-KeC">
+                                <rect key="frame" x="8" y="692" width="195" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="HsP-gy-tLU" eventType="touchUpInside" id="yqa-gT-NB2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJL-Ko-tXD">
+                                <rect key="frame" x="211" y="692" width="195" height="36"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                <state key="normal" title="Photo Library"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vve-Z3-KeC" firstAttribute="width" secondItem="QJL-Ko-tXD" secondAttribute="width" id="3o1-FR-gPO"/>
+                            <constraint firstItem="QJL-Ko-tXD" firstAttribute="top" secondItem="ucL-Q8-PBq" secondAttribute="bottom" constant="8" id="3we-EW-Uqf"/>
+                            <constraint firstItem="zRo-cT-tnB" firstAttribute="trailing" secondItem="3Pc-hM-PGK" secondAttribute="trailing" constant="8" id="556-BP-EiL"/>
+                            <constraint firstItem="vve-Z3-KeC" firstAttribute="bottom" secondItem="zRo-cT-tnB" secondAttribute="bottom" constant="-8" id="5ee-kG-acR"/>
+                            <constraint firstItem="ucL-Q8-PBq" firstAttribute="leading" secondItem="zRo-cT-tnB" secondAttribute="leading" constant="8" id="8X2-MW-m2g"/>
+                            <constraint firstItem="zRo-cT-tnB" firstAttribute="trailing" secondItem="ucL-Q8-PBq" secondAttribute="trailing" constant="8" id="9us-nL-47x"/>
+                            <constraint firstItem="ucL-Q8-PBq" firstAttribute="top" secondItem="3Pc-hM-PGK" secondAttribute="bottom" constant="8" id="PcB-7e-ly4"/>
+                            <constraint firstItem="QJL-Ko-tXD" firstAttribute="bottom" secondItem="zRo-cT-tnB" secondAttribute="bottom" constant="-8" id="dhU-ZB-TvU"/>
+                            <constraint firstItem="vve-Z3-KeC" firstAttribute="leading" secondItem="zRo-cT-tnB" secondAttribute="leading" constant="8" id="f0A-En-nfM"/>
+                            <constraint firstItem="vve-Z3-KeC" firstAttribute="height" secondItem="QJL-Ko-tXD" secondAttribute="height" id="gD8-KZ-C14"/>
+                            <constraint firstItem="vve-Z3-KeC" firstAttribute="top" secondItem="ucL-Q8-PBq" secondAttribute="bottom" constant="8" id="ho3-QY-w2M"/>
+                            <constraint firstItem="QJL-Ko-tXD" firstAttribute="leading" secondItem="vve-Z3-KeC" secondAttribute="trailing" constant="8" id="lGh-6G-OTa"/>
+                            <constraint firstItem="3Pc-hM-PGK" firstAttribute="top" secondItem="zRo-cT-tnB" secondAttribute="top" constant="8" id="q33-9J-57c"/>
+                            <constraint firstItem="3Pc-hM-PGK" firstAttribute="leading" secondItem="zRo-cT-tnB" secondAttribute="leading" constant="8" id="qcv-lt-vic"/>
+                            <constraint firstItem="zRo-cT-tnB" firstAttribute="trailing" secondItem="QJL-Ko-tXD" secondAttribute="trailing" constant="8" id="r6Q-Z3-yPE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zRo-cT-tnB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Vx-l3-Vwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.579710144927539" y="-1344.2934782608697"/>
         </scene>
         <!--Register-->
         <scene sceneID="lAb-U1-3f3">
@@ -304,7 +369,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gWK-A3-Qpv">
                                         <rect key="frame" x="16" y="126" width="382" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkC-IC-baL">
                                         <rect key="frame" x="16" y="164" width="382" height="30"/>
@@ -332,7 +397,6 @@
                                     <constraint firstItem="gWK-A3-Qpv" firstAttribute="top" secondItem="Pq5-UH-y7g" secondAttribute="bottom" constant="8" id="TWz-ob-ivw"/>
                                     <constraint firstItem="gWK-A3-Qpv" firstAttribute="leading" secondItem="4l3-En-gzw" secondAttribute="leading" constant="16" id="tVH-qb-bz2"/>
                                     <constraint firstAttribute="trailing" secondItem="Pq5-UH-y7g" secondAttribute="trailing" constant="16" id="uDI-1O-6R6"/>
-                                    <constraint firstAttribute="trailing" secondItem="gWK-A3-Qpv" secondAttribute="trailing" constant="16" id="xHl-ZG-zi6"/>
                                     <constraint firstItem="Pq5-UH-y7g" firstAttribute="leading" secondItem="4l3-En-gzw" secondAttribute="leading" constant="16" id="xem-EU-BXB"/>
                                     <constraint firstItem="PkC-IC-baL" firstAttribute="leading" secondItem="4l3-En-gzw" secondAttribute="leading" constant="16" id="z3n-62-oX8"/>
                                 </constraints>
@@ -449,6 +513,6 @@
         <image name="square-individual-nine-7" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="v97-Km-jdY"/>
+        <segue reference="ikz-iD-oYx"/>
     </inferredMetricsTieBreakers>
 </document>
