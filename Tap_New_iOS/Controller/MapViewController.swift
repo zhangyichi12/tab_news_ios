@@ -66,9 +66,5 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         return annotationView
     }
-    
-    
-
-
 
 }

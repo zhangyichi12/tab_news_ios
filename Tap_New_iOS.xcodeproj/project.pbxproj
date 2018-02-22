@@ -25,6 +25,9 @@
 		2CB65D1720032EC200BA5338 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB65D1620032EC200BA5338 /* NewsTableViewController.swift */; };
 		2CB65D4220033A3A00BA5338 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB65D4020033A3A00BA5338 /* NewsTableViewCell.swift */; };
 		2CB65D4320033A3A00BA5338 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB65D4120033A3A00BA5338 /* NewsTableViewCell.xib */; };
+		2CC789D8203E600B0083CF64 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC789D7203E600B0083CF64 /* LogInViewController.swift */; };
+		2CC789E2203E63080083CF64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CC789E1203E63080083CF64 /* GoogleService-Info.plist */; };
+		2CC789E4203E640C0083CF64 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC789E3203E640C0083CF64 /* RegisterViewController.swift */; };
 		E85D6A7F63221BE01FFAEFB0 /* Pods_Tap_New_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1086DA81FC2A7B662C81A2A /* Pods_Tap_New_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +74,9 @@
 		2CB65D1620032EC200BA5338 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		2CB65D4020033A3A00BA5338 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		2CB65D4120033A3A00BA5338 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		2CC789D7203E600B0083CF64 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		2CC789E1203E63080083CF64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2CC789E3203E640C0083CF64 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		42F3EF4A23DCD6C05E555820 /* Pods-Tap_New_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap_New_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tap_New_iOS/Pods-Tap_New_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		6DE87235839555DCEC135014 /* Pods-Tap_New_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap_New_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tap_New_iOS/Pods-Tap_New_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B1086DA81FC2A7B662C81A2A /* Pods_Tap_New_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tap_New_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +164,7 @@
 				2CB65D082002EE5B00BA5338 /* View */,
 				2CB65D052002ED4D00BA5338 /* Model */,
 				2CB65CDD2002E4E400BA5338 /* Info.plist */,
+				2CC789E1203E63080083CF64 /* GoogleService-Info.plist */,
 			);
 			path = Tap_New_iOS;
 			sourceTree = "<group>";
@@ -194,7 +201,6 @@
 			children = (
 				2C9E5F4B2004A7AE00AAB268 /* CollectionView */,
 				2CB65D182003350900BA5338 /* TableView */,
-				2CB65CD12002E4E400BA5338 /* AppDelegate.swift */,
 				2CB65CD52002E4E400BA5338 /* Main.storyboard */,
 				2CB65CD82002E4E400BA5338 /* Assets.xcassets */,
 				2CB65CDA2002E4E400BA5338 /* LaunchScreen.storyboard */,
@@ -222,11 +228,14 @@
 		2CB65D1A2003354D00BA5338 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2CB65CD12002E4E400BA5338 /* AppDelegate.swift */,
 				2CB65D032002E7B000BA5338 /* NewsCollectionViewController.swift */,
 				2CB65D1620032EC200BA5338 /* NewsTableViewController.swift */,
 				2C91EA492003421A00171CB7 /* NewsDetailViewController.swift */,
 				2C15A9CE20071AA6002808EC /* NewsRecognitionViewController.swift */,
 				2C9E5F522005CB6200AAB268 /* MapViewController.swift */,
+				2CC789D7203E600B0083CF64 /* LogInViewController.swift */,
+				2CC789E3203E640C0083CF64 /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -362,6 +371,7 @@
 				2C9E5F4E2004A7AF00AAB268 /* NewsCollectionViewCell.xib in Resources */,
 				2CB65D4320033A3A00BA5338 /* NewsTableViewCell.xib in Resources */,
 				2C15A9DB200739A7002808EC /* tessdata in Resources */,
+				2CC789E2203E63080083CF64 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,11 +399,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tap_New_iOS/Pods-Tap_New_iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -442,6 +462,8 @@
 			files = (
 				2C91EA4A2003421A00171CB7 /* NewsDetailViewController.swift in Sources */,
 				2C15A9CF20071AA6002808EC /* NewsRecognitionViewController.swift in Sources */,
+				2CC789D8203E600B0083CF64 /* LogInViewController.swift in Sources */,
+				2CC789E4203E640C0083CF64 /* RegisterViewController.swift in Sources */,
 				2CB65D042002E7B000BA5338 /* NewsCollectionViewController.swift in Sources */,
 				2CB65D4220033A3A00BA5338 /* NewsTableViewCell.swift in Sources */,
 				2C9E5F502004A7C200AAB268 /* NewsCollectionViewCell.swift in Sources */,
