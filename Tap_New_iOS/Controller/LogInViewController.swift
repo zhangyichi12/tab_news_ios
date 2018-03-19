@@ -27,6 +27,13 @@ class LogInViewController: UIViewController {
         Auth.auth().signIn(withEmail: emailFiled.text!, password: passwordField.text!, completion: { (user, error) in
             
             if error != nil {
+                SVProgressHUD.dismiss()
+                
+                let loginFailureAlert = UIAlertController(title: "Register Error", message: "\(error!.localizedDescription) Please try again.", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default)
+                loginFailureAlert.addAction(okAction)
+                self.present(loginFailureAlert, animated: true, completion: nil)
+                
                 print("Login error: \(error!)")
             }
             else {

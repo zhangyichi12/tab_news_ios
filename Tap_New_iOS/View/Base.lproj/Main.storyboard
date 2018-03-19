@@ -44,12 +44,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mo" translatesAutoresizingMaskIntoConstraints="NO" id="VwE-HL-ZdP">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" image="mo" translatesAutoresizingMaskIntoConstraints="NO" id="VwE-HL-ZdP">
+                                <rect key="frame" x="0.0" y="64" width="414" height="599"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewE-hp-pPg">
-                                <rect key="frame" x="0.0" y="700" width="414" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYr-hG-JDS">
+                                <rect key="frame" x="0.0" y="663" width="414" height="36"/>
+                                <color key="backgroundColor" red="0.78263610601425171" green="0.42324024438858032" blue="0.44310459494590759" alpha="0.60651220034246578" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Q8j-Mu-yUx" kind="show" id="MCp-V3-Fpx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewE-hp-pPg">
+                                <rect key="frame" x="0.0" y="699" width="414" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="0.86434075342465755" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                 <state key="normal" title="Log in">
@@ -59,33 +69,23 @@
                                     <segue destination="5xl-fJ-BUB" kind="show" id="oUN-7c-GSk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYr-hG-JDS">
-                                <rect key="frame" x="0.0" y="664" width="414" height="36"/>
-                                <color key="backgroundColor" red="0.78263610601425171" green="0.42324024438858032" blue="0.44310459494590759" alpha="0.60651220034246578" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Q8j-Mu-yUx" kind="show" id="z39-2B-QLW"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="pYr-hG-JDS" firstAttribute="trailing" secondItem="ict-VT-abN" secondAttribute="trailing" id="DFL-ps-ZIb"/>
-                            <constraint firstItem="pYr-hG-JDS" firstAttribute="leading" secondItem="ict-VT-abN" secondAttribute="leading" id="HAW-A3-8yM"/>
-                            <constraint firstItem="ewE-hp-pPg" firstAttribute="trailing" secondItem="ict-VT-abN" secondAttribute="trailing" id="Jae-gv-ifN"/>
-                            <constraint firstItem="ewE-hp-pPg" firstAttribute="bottom" secondItem="ict-VT-abN" secondAttribute="bottom" id="Mjn-7M-ozU"/>
-                            <constraint firstItem="ewE-hp-pPg" firstAttribute="leading" secondItem="ict-VT-abN" secondAttribute="leading" id="UZD-rs-bIh"/>
-                            <constraint firstItem="ewE-hp-pPg" firstAttribute="top" secondItem="pYr-hG-JDS" secondAttribute="bottom" id="iG1-4N-7uJ"/>
+                            <constraint firstItem="ewE-hp-pPg" firstAttribute="top" secondItem="pYr-hG-JDS" secondAttribute="bottom" id="67e-Zv-oG3"/>
+                            <constraint firstItem="pYr-hG-JDS" firstAttribute="top" secondItem="VwE-HL-ZdP" secondAttribute="bottom" id="AG0-Y5-Bem"/>
+                            <constraint firstItem="ewE-hp-pPg" firstAttribute="trailing" secondItem="ict-VT-abN" secondAttribute="trailing" id="E7x-69-7Kr"/>
+                            <constraint firstItem="VwE-HL-ZdP" firstAttribute="leading" secondItem="ict-VT-abN" secondAttribute="leading" id="Fb0-K5-eZY"/>
+                            <constraint firstItem="ict-VT-abN" firstAttribute="bottom" secondItem="ewE-hp-pPg" secondAttribute="bottom" constant="1" id="NHm-Rg-jon"/>
+                            <constraint firstItem="VwE-HL-ZdP" firstAttribute="trailing" secondItem="ict-VT-abN" secondAttribute="trailing" id="OjL-pb-lgW"/>
+                            <constraint firstItem="ewE-hp-pPg" firstAttribute="leading" secondItem="ict-VT-abN" secondAttribute="leading" id="bZy-r2-bLb"/>
+                            <constraint firstItem="pYr-hG-JDS" firstAttribute="trailing" secondItem="ict-VT-abN" secondAttribute="trailing" id="cNT-aB-mYg"/>
+                            <constraint firstItem="VwE-HL-ZdP" firstAttribute="top" secondItem="ict-VT-abN" secondAttribute="top" id="mwo-RL-2Cc"/>
+                            <constraint firstItem="pYr-hG-JDS" firstAttribute="leading" secondItem="ict-VT-abN" secondAttribute="leading" id="zhh-5j-Pc6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ict-VT-abN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="AIw-Oy-TM6"/>
-                    <connections>
-                        <segue destination="eDM-Yu-gPP" kind="show" id="ikz-iD-oYx"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2LN-uq-OvD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,6 +321,13 @@
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j0b-C3-g24">
+                                <rect key="frame" x="20" y="12" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="6JM-p4-DA6"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -480,6 +487,7 @@
                                     <constraint firstItem="Qz9-Cq-kfD" firstAttribute="height" secondItem="I6A-E8-zqI" secondAttribute="height" id="9nV-EF-7wX"/>
                                     <constraint firstItem="dhx-7J-tqr" firstAttribute="top" secondItem="Qz9-Cq-kfD" secondAttribute="bottom" constant="8" id="Aiu-Wc-1PN"/>
                                     <constraint firstItem="Qz9-Cq-kfD" firstAttribute="top" secondItem="I6A-E8-zqI" secondAttribute="bottom" constant="8" id="D7p-em-QyT"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Qz9-Cq-kfD" secondAttribute="trailing" constant="16" id="DhZ-Is-FIh"/>
                                     <constraint firstAttribute="trailing" secondItem="I6A-E8-zqI" secondAttribute="trailing" constant="16" id="EsY-lz-mpg"/>
                                     <constraint firstItem="Qz9-Cq-kfD" firstAttribute="leading" secondItem="pJA-8i-Xtk" secondAttribute="leading" constant="16" id="Vng-w5-SVi"/>
                                     <constraint firstItem="dhx-7J-tqr" firstAttribute="leading" secondItem="pJA-8i-Xtk" secondAttribute="leading" constant="16" id="bEW-df-Vst"/>
@@ -520,6 +528,6 @@
         <image name="square-individual-nine-7" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Nyi-pr-Cuq"/>
+        <segue reference="VIE-r5-7K7"/>
     </inferredMetricsTieBreakers>
 </document>
