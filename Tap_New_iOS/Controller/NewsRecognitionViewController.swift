@@ -12,6 +12,7 @@ import TesseractOCR
 class NewsRecognitionViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, G8TesseractDelegate {
 
     let imagePicker = UIImagePickerController()
+    let libraryImagePicker = UIImagePickerController()
 
     var tesseract = G8Tesseract(language:"eng")!
     
@@ -24,12 +25,19 @@ class NewsRecognitionViewController: UIViewController, UIImagePickerControllerDe
         imagePicker.sourceType = .camera
         imagePicker.allowsEditing = false
         
+        libraryImagePicker.delegate = self
+        libraryImagePicker.sourceType = .photoLibrary
+        libraryImagePicker.allowsEditing = false
+        
         tesseract.delegate = self
     }
 
 
     @IBAction func takePhoto(_ sender: UIButton) {
         present(imagePicker, animated: true, completion: nil)
+    }
+    @IBAction func selectPhotoFromLibrary() {
+        present(libraryImagePicker, animated: true, completion: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -43,11 +51,8 @@ class NewsRecognitionViewController: UIViewController, UIImagePickerControllerDe
                     self.outputText.text = self.tesseract.recognizedText
                 }
             }
-            
         }
-        
-        imagePicker.dismiss(animated: true, completion: nil)
-        
+        picker.dismiss(animated: true, completion: nil)
     }
     
     func shouldCancelImageRecognitionForTesseract(tesseract: G8Tesseract!) -> Bool {
@@ -55,6 +60,9 @@ class NewsRecognitionViewController: UIViewController, UIImagePickerControllerDe
     }
     
     func progressImageRecognition(for tesseract: G8Tesseract!) {
+        DispatchQueue.main.async {
+            self.outputText.text = "Recognition Progress %: \(tesseract.progress)"
+        }
         print("Recognition Progress %: ",tesseract.progress)
     }
     

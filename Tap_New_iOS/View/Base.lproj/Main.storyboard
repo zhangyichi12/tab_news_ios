@@ -314,6 +314,9 @@
                                 <rect key="frame" x="211" y="692" width="195" height="36"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                 <state key="normal" title="Photo Library"/>
+                                <connections>
+                                    <action selector="selectPhotoFromLibrary" destination="HsP-gy-tLU" eventType="touchUpInside" id="Zkg-dM-f84"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Here we go" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pb5-Jd-4OV">
                                 <rect key="frame" x="8" y="108" width="398" height="576"/>
